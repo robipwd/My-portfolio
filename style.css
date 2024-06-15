@@ -1,227 +1,542 @@
-
-:root{}
-
-*{
+:root * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #fff
+}
+/* nav start */
+.nav{
+    background-color: #0054A6;
+    height: 100px;
+}
+.left-nav{
+    width: 30%;
+}
+.left-nav a img{
+    height: 90%;
+    padding: 10px 30px;
+}
+.right-nav{
+    width: 70%;
+}
+.manu-bar{
     list-style: none;
-}
-.navbar{
     display: flex;
-
+    /* color: #fff; */
+    /* margin-right: 100px;
+    margin-top: 35px; */
+    padding: 35px 60px;
+    
 }
-.bg a{
-    color:  #e5261f;
+.manu-bar li{
+    padding-left: 40px;
 }
-
-
-.logo{
-    width: 50px;
-    height: 50px;
-
-}
-.text{
-    font-size: medium;
-}
-a{
+.manu-bar li a{
     text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+/* nav end */
+/* slider start */
+
+.home-slider {
+    border-radius: 0 0 250px 0;
+    object-fit: cover;
 }
 
-.call{
-    position: relative;
-    overflow: hidden;
-    background-color: #fbeaee;
-    border-radius: 4px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    z-index: 2;
+.slider-content {
+    padding: 400px 0px 130px 40px;
 }
+/* slider end */
 
 
-.call .call-box-top{
-    flex: 1 0 auto;
-    padding: 40px;
-}
-.call .call-phone{
-    margin-bottom: 5px;
-}
-
-.btn-toolbar{
-    white-space: nowrap;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 14px;
-    background: #e5261f;
-    border-radius: 4px;
+.my-btn {
     font-size: 14px;
-    font-weight: normal;
-    letter-spacing: 0.025em;
-    text-decoration: none;
-    transition: all 0.15s ease
+    font-weight: 600px;
+    line-height: 17px;
+    padding: 12px 35px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    vertical-align: middle;
+    border-radius: 30px;
+    margin-left: 60px;
+    margin-top: 115px;
 }
 
+h1 {
+    color: #0054a6;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
 
-.img{
-    vertical-align: middle;
-    border-style: none;
-    overflow-clip-margin: content-box;
+.my-design p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 26px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: .03em;
+    margin: 10px auto 0;
+    color: #4e4e50;
+    padding-bottom: 48px;
+}
+
+.row {
+    margin-right: -50px;
+}
+
+.service {
+    text-align: center;
+    margin-left: 14px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    overflow-clip-margin: content box;
     overflow: clip;
 }
 
-.row{
-    justify-content: space-between;}
-
-
-.body{
-    
-    color: #2f2f41;
+.Cards {
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
-.body-margin{
-    margin-left: 120px;
-    margin-right: 120px;
-}
-.services-header {
-    font-size: 35px;
-    color: #2f2f41;
-    margin-bottom: 32px;
-    
+.Card {
+    background: #ffd602;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+    border-radius: 30px;
+    height: 230px;
+    width: 176px;
+    margin-bottom: 30px;
 }
 
-strong{
-    font-weight: bold;
+.Card-body {
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 230px;
 }
-.col-md-6 {
-    flex: 0 0 45%;
-    max-width: 45%;}
-.h1, h2, h3, h4, h5, h6{
+
+.Card-text {
+    font-style: normal;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-.h3{
-    
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px
+    font-size: 12.8px;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: 1.2px;
+    color: #000;
 }
 
-.p-tag{
+.arr-icon {
+    display: none;
+}
+
+.top img {
+    margin-bottom: 15px;
+    height: 110px;
+}
+
+.top {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 94%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 10%;
+    background: linear-gradient(270deg, hsla(0, 0%, 100%, .35), hsla(0, 0%, 100%, 0)), #0054a6;
+    border-radius: 30px 30px 30px 30px;
+    padding-top: 15px;
+    transition: 0.5s;
+}
+
+.top p {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 5px;
+}
+
+.apple-app-btn {
+    margin-left: 30px;
+}
+
+/* our services start */
+.third {
+    background: #f6f6f6;
+    padding: 75px 0px;
+}
+
+.my-cls {
+    margin-left: 80px;
+    margin-right: 80px;
+    text-decoration: none;
+}
+
+.upore h1 {
+    color: #0054a6;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.upore p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 26px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: .03em;
+    margin: 10px auto 0;
+    color: #4e4e50;
+    padding-bottom: 48px;
+}
+
+.image img {
+    height: 100px;
+    width: 101px;
+}
+
+.image p {
+    
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    padding-top: 10px;
+}
+.our-services{
+    text-decoration: none;
+}
+.view-more {
+    background: rgba(255, 214, 2, .75);
+    border-radius: 30px;
+    padding: 12px 45px;
+    display: inline-block;
+}
+
+.view-more a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+/*our services end  */
+
+
+
+
+/* where to find us css start */
+.fourth {
+    background: #ffd602;
+    padding: 30px 0;
+    position: relative;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.where {
+    margin-right: 75px;
+}
+
+.fourth::before {
+    background-image: url(img/Banner4th.png);
+    background-size: cover;
+    height: 25px;
+    top: -25px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.fourth::after {
+    background-image: url(img/banner4thb.png);
+    background-size: 2400px 50px;
+    height: 40px;
+    bottom: -30px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.Left-Part h1 {
+    color: #000;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-left: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.Left-Part p {
+    color: #000;
+    width: 78%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.find-us-btn {
+    background: #231f20;
+    border-radius: 50px;
+    padding: 15px 55px;
+    margin-top: 90px;
+    width: 50%;
+}
+
+.find-us-btn a {
+    text-decoration: none;
+    color: #ffd602;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.Right-Part img {
+    width: 100%;
+}
+
+/* where to find us css end */
+
+/* let us help you start */
+.fifth {
+    background: #f6f6f6;
+    background-image: url(img/Banner\ 4th.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+}
+.tb-padding{
+    padding: 75px 0px;
+}
+
+.Upore h1 {
+    color: #0054a6;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.Upore p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 26px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: .03em;
+    margin: 10px auto 0;
+    color: #4e4e50;
+    padding-bottom: 48px;
+}
+
+.Image img {
+    height: 285px;
+    width: 255px;
+    border-radius: 20px 20px 80px 20px;
+}
+
+.line::after {
+    content: "";
+    border-bottom: 2px solid #ffd602;
+    width: 95px;
+    bottom: 80px;
+    left: 20px;
+    position: absolute;
+}
+
+.Image {
+    position: relative;
+}
+
+.hover {
+    background: linear-gradient(180deg, rgba(0, 84, 166, .6), rgba(0, 84, 166, .8));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px 20px 80px 20px;
+    padding: 18px;
+}
+
+.hover h5 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    align-items: center;
+    letter-spacing: .03em;
+    color: #fff;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+}
+
+.hover p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    height: 55px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+.IMAGE {
+    text-align: center;
+    background-image: url(img/young-man-wearing-headset-outdoors-earphones-photocase-stock-photo-large);
+    background-size: cover;
+}
+
+
+.IMAGE img {
+    width: 70px;
+    height: 150px;
+    position: sticky;
+}
+
+/* let us help you end */
+
+/* footer css */
+footer .mycolor{
+    background-color: #4e4e50;
+}
+.footer-1 p{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.logo-2{
+    padding-bottom: 15px;
+}
+.bottom-list{
+    margin-top: 15px;
+}
+.footer-2 h6{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+    color: #ffd602;
+    padding-bottom: 10px;
+}
+.footer-2 a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    text-decoration: none;
     margin-bottom: 20px;
 }
-
-.cnt{
-    
+.footer-2 p{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 0;
+    margin-bottom: 20px;
 }
-
-.text-header{
-    font-size: 35px;
-    color: #2f2f41;
+.footer-3 h6{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+    color: #ffd602;
+    padding-bottom: 10px;
 }
-.h2{
-    
-    justify-content: center;
-    
-}
-.img-logo{
-    float: left;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    
-}
-.img{
-    vertical-align: middle;
-    border-style: none;
-}
-
-.align-items-start{
-    justify-content: flex-start! important;
-}
-
-.box-group:first-child{
-    margin-left: 0px;
-}
-
-.box> img{
-    float: left;
-    border: 1px solid;
-    color: #e5e5e5;
-    padding: 10px;
-    margin: 5px;
-}
-.mb-1{
-    margin-bottom: 10px! important;
-}
-.java{
-    margin-bottom: 2px;
-    font-size: 20px;
-}
-.text-p{
-    font-size: small;
-    color: #5c5a5a;
-    overflow: hidden;
-    text-overflow: unset;
-    white-space: nowrap;
-}
-.p{
-    line-height: 26px;
-    
-}
-
-.icon{
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: currentColor;
-    vertical-align: text-bottom;
-}
-.IT{
-    list-style: none;
-    margin-left: 0px;
-}
-.email{
-    color: #e5261f;
+.footer-3 a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    color: #fff;
     text-decoration: none;
-    background: #f1eaea;
 }
+.bottom-list li{
+    list-style: none;
+    margin-bottom: 20px;
 
-.footer-col1{
-    margin-bottom: 15px;
-    width: calc(100% - (30px / 2));
-    padding: 0 15px;
 }
-
-.footer-icon{
-    display: table;
-    margin: 0px auto;
+.bottom-list ul{
+    padding-left: 0;
 }
-
-.icon-link{
-    
-    float: left;
-    margin: 5px 10px 5px 0px;
+.footer-4 h6{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+    color: #ffd602;
+    padding-bottom: 10px;
 }
-
-.footer-icon ul li a{
-    color: gray;
+.footer-4 a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
-
-
-
-
+.footer-5 h6{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+    color: #ffd602;
+    padding-bottom: 10px;
+}
+.ucb img{
+    width: 100%;
+}
+/* footer */
